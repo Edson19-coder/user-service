@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
         }
 
         List<?> user = userRepository.getUser(request);
-        System.out.println(user);
+        
         if(!user.isEmpty()) {
             response = FormatUtil.fillErrorResponse(response, ResponseCodes.USER_FOUND, this.getClass());
             return FormatUtil.fillResponse(response, ResponseCodes.USER_FOUND, HttpStatus.CONFLICT);
