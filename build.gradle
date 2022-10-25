@@ -20,10 +20,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
-	implementation 'org.projectlombok:lombok:1.18.4'
+	implementation 'org.projectlombok:lombok:1.18.24'
 	implementation 'com.google.code.gson:gson:2.8.5'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	implementation fileTree(dir: 'lib', include: ['*.jar'])
+   	annotationProcessor 'org.projectlombok:lombok:1.18.24' // IMPORTANTE PARA QUE FUNCIONE EN JAVA 11
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
